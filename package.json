@@ -1,0 +1,33 @@
+{
+  "name": "funny-movie-be",
+  "version": "1.0.0",
+  "description": "backend for funny movie",
+  "main": "index.js",
+  "engines": {
+    "node": "18.x"
+  },
+  "scripts": {
+    "test-user": "NODE_ENV=test mocha --timeout 10000 test/user/user.test.js",
+    "test-others": "NODE_ENV=test mocha --timeout 10000 test/others/*.test.js",
+    "start": "node index.js",
+    "dev": "NODE_ENV=dev nodemon index.js"
+  },
+  "author": "Nhan",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.17.1",
+    "express-validator": "^6.15.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^5.6.11",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "mocha": "^10.7.3",
+    "nodemon": "^3.1.4"
+  }
+}
